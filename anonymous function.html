@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>anonymous function</title>
+</head>
+<body>
+    <script>
+      var myfun =function(fn){
+            var result =fn();
+            console.log(result);
+        };
+      myfun(function(){return "hiiii daa"});
+    </script>
+
+
+    <script>
+        var myfun =function(fn){
+            var result =fn;
+            console.log(result);
+        };
+      myfun(654321);
+      
+    </script>
+
+
+    <script>
+        (function hii(){
+            var hi ="iibuddy";
+            console.log(hi);
+        } )(); //it will destory all elements inside the function
+        console.log(hi); // not defined
+    </script>
+    
+    <script>
+        x=Number(prompt('enter value'));
+        if(x==10){
+            console.log("dai");
+        }
+        else{
+            console.log("dii");
+        }
+
+    </script>
+</body>
+</html>

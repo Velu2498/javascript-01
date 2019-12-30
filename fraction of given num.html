@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>FRACTION OF GIVEN NUMBER</title>
+    </head>
+    <body>
+        <script>
+            function show(){
+                var i, num, fact;
+                fact =1;
+                num=Number(document.getElementById("value").value);
+
+                for(i=1;i<=num;i++){
+                    fact=fact*i;
+                }
+                document.getElementById("answer").value=fact;
+                console.log(fact);
+            }
+            
+            </script>
+            
+                ENTER NUMBER: <br> <input id='value'><br>
+                <button onclick="show()">fraction</button><br>
+                <input id='answer'>
+                <input>
+            
+    </body>
+</html>

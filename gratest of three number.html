@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gratest of three</title>
+</head>
+<body>
+    <p>enter 1st num  :<input type="number" value="enter number" id=num1> </p>
+    <p>enter 2nd num  <input type="text" value="enter number" id=num2></p>
+    <p>enter 3rd num  <input type="number" value="enter number" id=num3></p>
+    <input type="button" value="find" onclick="grate()">
+    <script>
+        var nums1=parseInt(document.getElementById('num1').value);
+        var nums2=parseInt(document.getElementById('num2').value);
+        var nums3=parseInt(document.getElementById('num3').value);
+        //var res=Math.max(nums1,nums2,nums3)
+        function grate(){
+        if(nums1>nums2 && nums1>nums3){
+            alert("gratest number is"+"\n         "+nums1)
+        }
+        else if(nums2>nums1 && nums2>nums3){
+            alert("gratest number is"+"\n          "+nums2)
+        }
+        else if(nums3>nums1 && nums3>nums2){
+            alert("gratest number is"+"\n          "+nums3)
+        }
+        //alert(res);
+        }
+    </script>
+</body>
+</html>

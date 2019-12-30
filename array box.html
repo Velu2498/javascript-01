@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add array</title>        
+</head>
+<body>
+        <input type="string" value="" id=arr >
+        <br>
+        <input type="button" value="Add" onclick="add()">
+        <script>
+                a=document.getElementById('arr').value
+                v=a.split(",")
+                //console.log(v)
+                function add(){
+                    let c=0
+                for(i of v){
+                    //console.log(i)
+                    c=c+parseFloat(i)
+                }
+                console.log(c)
+                alert("addition of given array  "+c)
+            }
+        </script>
+</body>
+</html>
